@@ -1,0 +1,6 @@
+{
+    "latex-workshop.viewer.pdf.internal.port": 12345,
+    "files.exclude": {
+        ".devcontainer": true
+    }
+}
