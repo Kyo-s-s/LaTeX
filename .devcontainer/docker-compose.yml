@@ -6,4 +6,5 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ../:/home/docker/work
+      - ./.latexmkrc:/home/docker/.latexmkrc
     tty: true

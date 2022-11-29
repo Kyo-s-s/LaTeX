@@ -2,8 +2,7 @@
     "name": "latex-docker",
     "dockerComposeFile": "docker-compose.yml",
     "extensions": [
-        "James-Yu.latex-workshop",
-        "taichi.vscode-textlint"
+        "James-Yu.latex-workshop"
     ],
     "remoteUser": "docker",
     "service": "latex-docker",
