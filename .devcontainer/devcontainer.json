@@ -1,12 +1,12 @@
 {
-    "name": "LaTeX",
+    "name": "latex-docker",
     "dockerComposeFile": "docker-compose.yml",
-    "service": "latex",
-    "remoteUser": "docker",
-    "workspaceFolder": "/home/docker/work",
     "extensions": [
         "James-Yu.latex-workshop",
         "taichi.vscode-textlint"
     ],
+    "remoteUser": "docker",
+    "service": "latex-docker",
+    "workspaceFolder": "/home/docker/work",
     "shutdownAction": "stopCompose"
 }
