@@ -39,5 +39,5 @@ VSCode + Docker を使った $\LaTeX$ 環境です。
 1. 左下の`><`をクリックし、`Reopen in Container` をクリックする。
 
 ## Usage
-保存時に自動でコンパイルされるようになっています。デフォルトだと$\text{p}\LaTeX$でコンパイルされます。変えたい場合は`.devcontainer/.latexmkrc`を書き換えてください。
+保存時に自動でコンパイルされるようになっています。デフォルトだと $\text{p}\LaTeX$ でコンパイルされます。変えたい場合は`.devcontainer/.latexmkrc`を書き換えてください。
 
