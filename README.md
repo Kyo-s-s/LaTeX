@@ -34,7 +34,7 @@ VSCode + Docker を使った $\LaTeX$ 環境です。
 
         1. VSCodeで開く。
 
-1. VSCodeに拡張機能 [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) をVSCodeに入れる。
+1. VSCodeに拡張機能 [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) を入れる。
 
 1. 左下の`><`をクリックし、`Reopen in Container` をクリックする。
 
