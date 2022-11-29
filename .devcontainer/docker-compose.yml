@@ -1,6 +1,8 @@
 services:
   latex:
-    image: kyopopo/texlive:latest
+    build: 
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ../:/home/docker/work
     tty: true

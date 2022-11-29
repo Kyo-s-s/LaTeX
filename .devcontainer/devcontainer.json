@@ -1,6 +1,6 @@
 {
     "name": "LaTeX",
-    "dockerComposeFile": "./docker-compose.yml",
+    "dockerComposeFile": "docker-compose.yml",
     "service": "latex",
     "remoteUser": "docker",
     "workspaceFolder": "/home/docker/work",
