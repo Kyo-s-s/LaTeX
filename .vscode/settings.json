@@ -15,6 +15,7 @@
                 "-l",
                 "-synctex=1",
                 "-halt-on-error",
+                "-interaction=nonstopmode",
                 "-file-line-error",
                 "%DOC%"
             ]
