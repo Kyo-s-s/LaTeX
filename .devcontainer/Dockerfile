@@ -1,4 +1,4 @@
-FROM archlinux:base-devel-20221023.0.96685
+FROM archlinux:base-devel
 
 ARG USER_ID=1000
 RUN useradd -m -u ${USER_ID} docker
@@ -32,7 +32,7 @@ RUN curl -OL http://tug.ctan.org/tex-archive/macros/latex/contrib/algorithmicx.z
     && mv algorithmicx /usr/share/texmf-dist/tex/latex/ \
     && mktexlsr
 
-RUN curl -OL https://www.ctan.org/tex-archive/macros/latex/contrib/thmbox.zip \
+RUN curl -OL https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/thmbox.zip \
     && unzip thmbox.zip \
     && cd thmbox \
     && latex thmbox.ins \
