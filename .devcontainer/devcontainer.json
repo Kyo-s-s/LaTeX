@@ -2,7 +2,9 @@
     "name": "latex-docker",
     "dockerComposeFile": "docker-compose.yml",
     "extensions": [
-        "James-Yu.latex-workshop"
+        "James-Yu.latex-workshop",
+        "taichi.vscode-textlint",
+        "GitHub.copilot"
     ],
     "remoteUser": "docker",
     "service": "latex-docker",

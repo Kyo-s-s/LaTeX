@@ -33,10 +33,17 @@
         "*.fls",
         "*.log",
         "*.synctex.gz",
-        "*.toc"
+        "*.toc",
+        "*.nav",
+        "*.out",
+        "*.snm"
     ],
     "latex-workshop.viewer.pdf.internal.port": 12345,
+    "latex-workshop.hover.preview.newcommand.newcommandFile": "/home/docker/work/hover.tex",
+    "textlint.autoFixOnSave": true,
     "files.exclude": {
-        ".devcontainer": true
-    }
+        ".devcontainer": false
+    },
+    // "textlint.configPath": "/home/docker/work/.textlintrc.json",
+    // "textlint.nodePath": "/home/docker/work/node_modules"
 }
