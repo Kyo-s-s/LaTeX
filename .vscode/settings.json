@@ -21,9 +21,17 @@
             ]
         }
     ],
-    "latex-workshop.latexindent.path": "latexindent",
     "editor.defaultFormatter": "James-Yu.latex-workshop",
     "editor.formatOnSave": true,
+    "latex-workshop.intellisense.package.enabled": true,
+    "latex-workshop.latexindent.path": "latexindent",
+    "latex-workshop.latexindent.args": [
+        "%TMPFILE%",
+        "-c=%DIR%/",
+        "-y=defaultIndent: '%INDENT%'",
+        "-y=verbatimEnvironments: algorithmic: 1",
+        "-y=verbatimEnvironments: tikzpicture: 1",
+    ],
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.latex.autoClean.run": "onBuilt",
     "latex-workshop.latex.clean.fileTypes": [
