@@ -6,6 +6,7 @@ RUN useradd -m -u ${USER_ID} docker
 RUN pacman -Syyu --noconfirm \
     texlive-langjapanese \
     texlive-latexextra \
+    texlive-binextra \
     perl-yaml-tiny \
     perl-file-homedir \
     ghostscript \
