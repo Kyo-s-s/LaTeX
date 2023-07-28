@@ -1,12 +1,18 @@
 FROM archlinux:base-devel
 
-ARG USER_ID=1000
-RUN useradd -m -u ${USER_ID} docker
+ARG UID=1000
+ARG GID=1000
+RUN groupadd -g $GID docker \
+    && useradd -m -u ${UID} -g ${GID} docker \
+    && echo "dev ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 RUN pacman -Syyu --noconfirm \
     texlive-langjapanese \
     texlive-latexextra \
     texlive-binextra \
+    texlive-luatex \
+    texlive-fontsrecommended \
+    noto-fonts-cjk \
     perl-yaml-tiny \
     perl-file-homedir \
     ghostscript \
@@ -40,6 +46,11 @@ RUN curl -OL https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/thmbox.zip \
     && latex thmbox.dtx \
     && cd .. \
     && mv thmbox /usr/share/texmf-dist/tex/latex/ \
+    && mktexlsr
+
+RUN git clone https://github.com/abenori/jlreq.git \
+    && cd jlreq \
+    && make install \
     && mktexlsr
  
 

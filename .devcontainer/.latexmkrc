@@ -1,4 +1,4 @@
-$latex = 'internal mylatex platex %A %O %S';
+$latex = 'internal mylatex uplatex %A %O %S';
 $bibtex = 'pbibtex %O %B';
 $dvipdf = 'dvipdfmx %O -o %D %S';
 $makeindex = 'mendex %O -o %D %S';
