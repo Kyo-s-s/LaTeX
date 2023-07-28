@@ -1,30 +1,27 @@
 \usepackage{thmbox}
+
 \newtheorem[M]{theorem}{Thm}[section]       % 定理
 \newtheorem[M]{definition}[theorem]{Def}    % 定義
 \newtheorem[M]{lemma}[theorem]{Lem}         % 補題
 \newtheorem[M]{corollary}[theorem]{Cor}     % 系
 \newtheorem[M]{proposition}[theorem]{Prop}  % 命題
 
+\newenvironment{thm}[1]{\begin{theorem}[#1]\indent}{\end{theorem}}
+\newenvironment{thm*}{\begin{theorem}\indent}{\end{theorem}}
 
-\newenvironment{thm}[1]{\begin{theorem}[\rm #1]\rm \indent}{\end{theorem}}
-\newenvironment{thm*}{\begin{theorem}\rm \indent}{\end{theorem}}
+\newenvironment{dfn}[1]{\begin{definition}[#1]\indent}{\end{definition}}
+\newenvironment{dfn*}{\begin{definition}\indent}{\end{definition}}
 
-\newenvironment{dfn}[1]{\begin{definition}[\rm #1]\rm \indent}{\end{definition}}
-\newenvironment{dfn*}{\begin{definition}\rm \indent}{\end{definition}}
+\newenvironment{lem}[1]{\begin{lemma}[#1]\indent}{\end{lemma}}
+\newenvironment{lem*}{\begin{lemma}\indent}{\end{lemma}}
 
-\newenvironment{lem}[1]{\begin{lemma}[\rm #1]\rm \indent}{\end{lemma}}
-\newenvironment{lem*}{\begin{lemma}\rm \indent}{\end{lemma}}
-
-\newenvironment{cor}[1]{\begin{corollary}[\rm #1]\rm \indent}{\end{corollary}}
-\newenvironment{cor*}{\begin{corollary}\rm \indent}{\end{corollary}}
+\newenvironment{cor}[1]{\begin{corollary}[#1]\indent}{\end{corollary}}
+\newenvironment{cor*}{\begin{corollary}\indent}{\end{corollary}}
 
 \newenvironment{remark}{\begin{example}[Remark]}{\end{example}}    % 注意
 
-\newenvironment{prop}[1]{\begin{proposition}[\rm #1]\rm \indent}{\end{proposition}}
-\newenvironment{prop*}{\begin{proposition}\rm \indent}{\end{proposition}}
+\newenvironment{prop}[1]{\begin{proposition}[#1]\indent}{\end{proposition}}
+\newenvironment{prop*}{\begin{proposition}\indent}{\end{proposition}}
 
 \newcommand{\thmref}[1]{Thm~\ref{#1}}
 \newcommand{\dfnref}[1]{Def~\ref{#1}}
-
-
-
