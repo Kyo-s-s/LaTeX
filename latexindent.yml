@@ -1,3 +1,13 @@
 verbatimEnvironments:
   algorithmic: 1
   tikzpicture: 1
+
+replacements:
+  -
+    this: '。'
+    that: '．'
+    lookForThis: 1
+  -
+    this: '、'
+    that: '，'
+    lookForThis: 1
