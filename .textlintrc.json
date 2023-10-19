@@ -4,11 +4,14 @@
         "preset-ja-spacing": true,
         "no-doubled-joshi": true,
         "preset-ja-technical-writing": {
+            "sentence-length": false,
             "ja-no-mixed-period": {
                 "periodMark": "．",
-                "allowedPeriorMarks": [
-                    "，", ":"
-                ]
+                "allowPeriodMarks": [
+                    "，",
+                    ":"
+                ],
+                "checkFootnote": true
             }
         }
     }
