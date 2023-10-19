@@ -7,4 +7,5 @@ services:
     volumes:
       - ../:/home/docker/work
       - ./.latexmkrc:/home/docker/.latexmkrc
+      - ./indentconfig.yml:/home/docker/indentconfig.yaml
     tty: true
