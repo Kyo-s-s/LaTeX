@@ -28,6 +28,7 @@
     "latex-workshop.latexindent.args": [
         "%TMPFILE%",
         "-c=%DIR%/",
+        "-r",
         "-y=defaultIndent: '%INDENT%'",
     ],
     "latex-workshop.latex.autoBuild.run": "onSave",
