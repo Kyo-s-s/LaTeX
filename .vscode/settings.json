@@ -47,10 +47,10 @@
     ],
     "latex-workshop.viewer.pdf.internal.port": 12345,
     "latex-workshop.hover.preview.newcommand.newcommandFile": "/home/docker/work/hover.tex",
-    "textlint.autoFixOnSave": true,
+    "textlint.configPath": "/home/docker/work/.textlintrc.json",
+    "textlint.nodePath": "/home/docker/work/node_modules",
+    "textlint.run": "onSave",
     "files.exclude": {
         ".devcontainer": false
     },
-    // "textlint.configPath": "/home/docker/work/.textlintrc.json",
-    // "textlint.nodePath": "/home/docker/work/node_modules"
 }
