@@ -5,6 +5,8 @@
         "no-doubled-joshi": true,
         "preset-ja-technical-writing": {
             "sentence-length": false,
+            "max-comma": false,
+            "max-kanji-continuous-len": false,
             "ja-no-mixed-period": {
                 "periodMark": "．",
                 "allowPeriodMarks": [
