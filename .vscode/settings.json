@@ -1,4 +1,12 @@
 {
+    "editor.quickSuggestionsDelay": 0,
+    "[latex]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
+    },
     "latex-workshop.latex.recipes": [
         {
             "name": "latexmk",
@@ -29,7 +37,7 @@
         "%TMPFILE%",
         "-c=%DIR%/",
         "-r",
-        "-y=defaultIndent: '%INDENT%'",
+        "-y=defaultIndent: '%INDENT%'"
     ],
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.latex.autoClean.run": "onBuilt",
@@ -50,7 +58,8 @@
     "textlint.configPath": "/home/docker/work/.textlintrc.json",
     "textlint.nodePath": "/home/docker/work/node_modules",
     "textlint.run": "onSave",
+    "hsnips.hsnipsPath": ".vscode",
     "files.exclude": {
         ".devcontainer": false
-    },
+    }
 }

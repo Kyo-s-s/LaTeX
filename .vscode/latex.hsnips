@@ -1,0 +1,49 @@
+global
+function math(context) {
+    return context.scopes.some(s => s.startsWith("meta.math"));
+}
+endglobal
+
+snippet ;; "[HS] math inline" A
+$ $1 $ $0
+endsnippet
+
+snippet `([\\a-zA-Z]+);;` "[HS] convert math inline" A
+`` rv = `$ ${m[1]} $ ` ``
+endsnippet
+
+context math(context)
+snippet inv "inverse" Ai
+^{-1}
+endsnippet
+
+context math(context)
+snippet := "coloneqq" Ai
+\\coloneqq 
+endsnippet
+
+context math(context)
+snippet in "in" A
+\in 
+endsnippet
+
+context math(context)
+snippet xx "times" A
+\\times 
+endsnippet
+
+# Rbb -> \mathbb{R}
+context math(context)
+snippet `\b([A-Z])bb` " [HS] Math bb" A
+`` rv = `\\mathbb{${m[1]}}` ``
+endsnippet
+context !math(context)
+snippet `\b([A-Z])bb` " [HS] Math bb" A
+`` rv = ` $ \\mathbb{${m[1]}} $ ` ``
+endsnippet
+
+# Acal -> \mathcal{A}
+context math(context)
+snippet `\b([A-Z])cal` " [HS] Math cal" A
+`` rv = `\\mathbb{${m[1]}}` ``
+endsnippet

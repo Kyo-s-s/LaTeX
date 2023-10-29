@@ -4,7 +4,8 @@
     "extensions": [
         "James-Yu.latex-workshop",
         "taichi.vscode-textlint",
-        "GitHub.copilot"
+        "GitHub.copilot",
+        "draivin.hsnips"
     ],
     "remoteUser": "docker",
     "service": "latex-docker",
