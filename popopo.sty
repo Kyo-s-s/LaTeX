@@ -39,7 +39,7 @@
 % TikZ
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc, arrows.meta}
-\usetikzlibrary{graphs}
+\usetikzlibrary{graphs, quotes}
 \usetikzlibrary{automata,positioning}
 
 % 疑似コード　Pythonみたいになってうれしいね
@@ -55,7 +55,7 @@
 
 % Code
 % TODO : いつかこれ→ https://zenn.dev/kyaon/articles/68867e2657e605 を参考にいじる
-\usepackage{listings, plistings, color} 
+\usepackage{listings, plistings, color}
 \usepackage{amsfonts}
 \definecolor{OliveGreen}{rgb}{0.0,0.6,0.0}
 \definecolor{Orenge}{rgb}{0.89,0.55,0}
@@ -71,9 +71,9 @@
   frame={tb},
   breaklines=true,
   columns=[l]{fullflexible},
-  numbers=left,
-  xrightmargin=0zw,
-  xleftmargin=3zw,
+  % numbers=left,
+  xrightmargin=1zw,
+  xleftmargin=1zw,
   numberstyle={\scriptsize},
   stepnumber=1,
   numbersep=1zw,
@@ -83,28 +83,28 @@
   commentstyle={\color[HTML]{9687A3}},  %注釈の書体
   stringstyle={\color{Orenge}}         %文字列
 }
-  
+
 \lstdefinelanguage{matlab}{
   morekeywords = [1]{
-    for, end, if, break, else, function, elseif, return, while, try, catch
-  }, % Skyblue
+      for, end, if, break, else, function, elseif, return, while, try, catch
+    }, % Skyblue
   morecomment = [l]{\%},
   morestring=[d]{'}{'},   % 文字列 (シングル)
   morestring=[b]{"},      % 文字列 (ダブル)
 }
-      
+
 \lstset{
   language = {matlab},
   stringstyle = {\color[HTML]{9687A3}},
 }
-        
+
 \renewcommand{\lstlistingname}{ソースコード}
 
 \algnewcommand{\Initialize}[1]{
-	\State \textbf{Initialize:}
-	\State \hspace*{\algorithmicindent}\parbox[t]{0.8\linewidth}{\raggedright #1}
+  \State \textbf{Initialize:}
+  \State \hspace*{\algorithmicindent}\parbox[t]{0.8\linewidth}{\raggedright #1}
 }
-        
+
 
 % newcommand はhover.tex にもかいてね　プレビューで反映されるようになるよ
 \newcommand{\lrp}[1]{\left(#1\right)}
